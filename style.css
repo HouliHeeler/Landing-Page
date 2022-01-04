@@ -8,13 +8,14 @@ body{
 header{
     display:flex;
     flex-direction:column;
-    background-color:#1F2937
+    background-color:#1F2937;
+    padding:0px 15px;
 }
 
 .banner{
     display:flex;
-    height: 32px;
-    align-items: stretch;
+    height: 24px;
+    width: auto;
     justify-content: space-between;
     margin: 10px;
     padding: 5px;
@@ -22,21 +23,47 @@ header{
 
 .logo{
     display: flex;
-    flex: 0 1 auto;
 }
 
 .links{
-    gap: 10px;
-    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 12px;
     color: #E5E7EB;
+    margin-top: 10px;
 }
 
 a{
-    all: unset;
+    text-decoration: none;
+    color: #E5E7EB;
 }
 
 .big-banner{
     display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#website{
+    font-size:48px;
+    font-weight:bold;
+    color:#f9faf8;
+}
+
+#paragraph{
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .main{
@@ -93,6 +120,7 @@ a{
     align-self: flex-end;
     font-weight: bold;
     margin: 10px;
+    margin-top: 20px;
     font-size: 24px;
 }
 
@@ -118,12 +146,10 @@ a{
     font-size: 12px;
 }
 
-#btwo{
-    border: solid #E5E7EB;
+button{
     background-color: #3882F6;
     color: #E5E7EB;
     border-radius:15%;
-    border-width: 2px;
 }
 
 footer{
